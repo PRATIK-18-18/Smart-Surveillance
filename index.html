@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Surveillance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Surveillance System</h1>
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#alerts">Alerts</a></li>
+        <li><a href="#live">Live Feed</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="dashboard">
+    <h2>System Dashboard</h2>
+    <p>Status: <span id="motionStatus">No Motion Detected</span></p>
+    <button onclick="simulateMotion()">Simulate Motion</button>
+  </section>
+
+  <section id="alerts">
+    <h2>Alert Log</h2>
+    <ul id="alertList">
+      <li>No alerts yet.</li>
+    </ul>
+  </section>
+
+  <section id="live">
+    <h2>Live Camera Feed (Simulated)</h2>
+    <video width="100%" controls>
+      <source src="assets/placeholder-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section id="location">
+    <h2>Current Location</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0197130286714!2d-122.08424918468143!3d37.421999779826944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb73033df5ed3%3A0xdba4e77e799f24b1!2sGoogleplex!5e0!3m2!1sen!2sin!4v1617205741762!5m2!1sen!2sin"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Feedback</h2>
+    <p>Email: smartsec.project@gmail.com</p>
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smart Surveillance Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
